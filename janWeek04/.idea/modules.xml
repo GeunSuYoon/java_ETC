@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/binary_search_tree.iml" filepath="$PROJECT_DIR$/binary_search_tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/janWeek04.iml" filepath="$PROJECT_DIR$/janWeek04.iml" />
     </modules>
   </component>
 </project>
