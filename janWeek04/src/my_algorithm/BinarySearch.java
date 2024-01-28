@@ -18,6 +18,5 @@ public class BinarySearch {
             mid = (left + right) / 2;
         }
         return (-1);
-//        throw new NoSuchElementException("There are NO TARGET in the array.");
     }
 }
