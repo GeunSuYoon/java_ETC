@@ -1,7 +1,6 @@
 package my_algorithm;
 
 import java.io.BufferedReader;
-import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -10,9 +9,9 @@ public class HashTable {
     static final int    HASH_LEN = 400;
     static final int    HASH_VAL = 19;
 
-    static int[][]      inputcnt = new int[HASH_SIZE][HASH_LEN];
-    static int[]        tablelen = new int[HASH_SIZE];
-    static String[][]   strcontainer = new String[HASH_SIZE][HASH_LEN];
+    static int[][]      HashTable = new int[HASH_SIZE][HASH_LEN];
+    static int[]        TableLen = new int[HASH_SIZE];
+    static String[][]   Data = new String[HASH_SIZE][HASH_LEN];
     static int          n;
     static String       str;
     public static void  hashing() {
@@ -32,7 +31,7 @@ public class HashTable {
                 throw new RuntimeException(e);
             }
             int key = getHashKey(str);
-            int check = is_exist(key);
+            int check = isExist(key);
 
             if (check > 0)
                 sb.append(str).append(check).append("\n");
@@ -50,22 +49,19 @@ public class HashTable {
         key = key < 0 ? -key : key;
         return (key % HASH_SIZE);
     }
-    public static int   is_exist(int key)
+    public static int isExist(int key)
     {
-        int len = tablelen[key];
+        int len = TableLen[key];
 
-        if (len != 0)
-        {
-            for (int cnt = 0; cnt < len; cnt++)
-            {
-                if (str.equals(strcontainer[key][cnt]))
-                {
-                    inputcnt[key][cnt]++;
-                    return (inputcnt[key][cnt]);
+        if (len != 0) {
+            for (int cnt = 0; cnt < len; cnt++) {
+                if (str.equals(Data[key][cnt])) {
+                    HashTable[key][cnt]++;
+                    return (HashTable[key][cnt]);
                 }
             }
         }
-        strcontainer[key][tablelen[key]++] = str;
+        Data[key][TableLen[key]++] = str;
         return (0);
     }
 }

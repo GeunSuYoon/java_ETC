@@ -4,13 +4,9 @@ public class HeapSort {
     public static void maxHeapSort(int[] arr){
         maxHeapSorting(arr, arr.length);
     }
-//    public static void minHeapSort(int[] arr){
-//
-//    }
-//
     public static void maxHeapSorting(int[] arr, int heap_size){
 //        int heap_size = arr.length;
-        if (heap_size == 0)
+        if (heap_size == 1)
             return ;
         for (int cnt = heap_size / 2 - 1; cnt >= 0; cnt--)
             maxHeapify(arr, cnt, heap_size);
@@ -30,10 +26,8 @@ public class HeapSort {
             biggest = left;
         if (right < heap_size && arr[biggest] < arr[right])
             biggest = right;
-        if (biggest != node){
+        if (biggest != node)
             heap_swap(arr, biggest, node);
-            maxHeapify(arr, biggest, heap_size);
-        }
     }
 
     public static void  heap_swap(int[] arr, int a, int b){

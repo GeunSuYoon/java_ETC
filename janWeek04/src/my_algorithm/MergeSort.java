@@ -12,34 +12,39 @@ public class MergeSort {
         merge(arr, left, mid, right);
     }
     public static void merge(int[] arr, int left, int mid, int right){
-        int left_len = mid - left + 1;
-        int right_len = right - mid;
-        int total_len = right - left + 1;
-        int left_cnt = 0;
-        int right_cnt = 0;
-        int[] left_arr = Arrays.copyOfRange(arr, left, left + left_len);
-        int[] right_arr = Arrays.copyOfRange(arr, mid + 1, mid + 1 + right_len);
+        int leftLen = mid - left + 1;
+        int rightLen = right - mid;
+        int totalLen = right - left + 1;
+        int leftCnt = 0;
+        int rightCnt = 0;
+        int arrCnt = 0;
+        int[] leftArr = Arrays.copyOfRange(arr, left, left + leftLen);
+        int[] rightArr = Arrays.copyOfRange(arr, mid + 1, mid + 1 + rightLen);
 
-        for (int arr_cnt = 0; arr_cnt < total_len; arr_cnt++){
-            if (left_cnt == left_len)
-            {
-                arr[left + arr_cnt] = right_arr[right_cnt];
-                right_cnt++;
+        while (arrCnt < totalLen) {
+            while (leftCnt < leftLen && rightCnt < rightLen) {
+                if (leftArr[leftCnt] < rightArr[rightCnt]) {
+                    arr[left + arrCnt] = leftArr[leftCnt];
+                    leftCnt++;
+                }
+                else {
+                    arr[left + arrCnt] = rightArr[rightCnt];
+                    rightCnt++;
+                }
+                arrCnt++;
             }
-            else if (right_cnt == right_len)
+            if (leftCnt == leftLen)
             {
-                arr[left + arr_cnt] = left_arr[left_cnt];
-                left_cnt++;
+                while (rightCnt < rightLen) {
+                    arr[left + arrCnt] = rightArr[rightCnt];
+                    rightCnt++;
+                    arrCnt++;
+                }
             }
-            else if (left_arr[left_cnt] < right_arr[right_cnt])
-            {
-                arr[left + arr_cnt] = left_arr[left_cnt];
-                left_cnt++;
-            }
-            else
-            {
-                arr[left + arr_cnt] = right_arr[right_cnt];
-                right_cnt++;
+            while (leftCnt < leftLen) {
+                arr[left + arrCnt] = leftArr[leftCnt];
+                leftCnt++;
+                arrCnt++;
             }
         }
     }

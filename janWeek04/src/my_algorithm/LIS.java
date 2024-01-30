@@ -1,21 +1,18 @@
 package my_algorithm;
 
-import java.util.ArrayList;
-
 public class LIS {
-    public static int   longestInscresingSequence(int[] arr){
-        int arr_len = arr.length;
-        int[]   dp = new int[arr_len];
-//        int[]   retArr = new int[arr_len];
+    public static int longestIncreasingSequence(int[] arr){
+        int     arrLen = arr.length;
+        int[]   dp = new int[arrLen];
 
-        for (int idx = 0; idx < arr_len - 1; idx++){
-            for (int comp = idx + 1; comp < arr_len; comp++){
-                if(arr[comp] > arr[idx])
-                    dp[comp] = Math.max(dp[comp], dp[idx] + 1);
+        for (int comp = 0; comp < arrLen - 1; comp++){
+            for (int idx = comp + 1; idx < arrLen; idx++){
+                if(arr[idx] > arr[comp])
+                    dp[idx] = Math.max(dp[idx], dp[comp] + 1);
             }
         }
         int retLen = 0;
-        for (int cnt = 0; cnt < arr_len; cnt++)
+        for (int cnt = 0; cnt < arrLen; cnt++)
             if (retLen < dp[cnt])
                 retLen = dp[cnt];
         return (retLen + 1);
