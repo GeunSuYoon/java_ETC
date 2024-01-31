@@ -1,20 +1,21 @@
 package my_algorithm;
 
 public class HeapSort {
-    public static void maxHeapSort(int[] arr){
-        maxHeapSorting(arr, arr.length);
+    public static void Sort(int[] arr)
+    {
+        MaxHeapSorting(arr, arr.length);
     }
-    public static void maxHeapSorting(int[] arr, int heap_size){
-//        int heap_size = arr.length;
-        if (heap_size == 1)
+    public static void MaxHeapSorting(int[] arr, int heapSize)
+    {
+        if (heapSize == 1)
             return ;
-        for (int cnt = heap_size / 2 - 1; cnt >= 0; cnt--)
-            maxHeapify(arr, cnt, heap_size);
-        heap_swap(arr, 0, heap_size - 1);
-        maxHeapSorting(arr, heap_size - 1);
+        for (int heapCnt = heapSize / 2 - 1; heapCnt >= 0; heapCnt--)
+            MaxHeapify(arr, heapCnt, heapSize);
+        Swap(arr, 0, heapSize - 1);
+        MaxHeapSorting(arr, heapSize - 1);
     }
 
-    public static void maxHeapify(int[] arr, int node, int heap_size){
+    private static void MaxHeapify(int[] arr, int node, int heap_size){
         int biggest;
         int left;
         int right;
@@ -27,10 +28,10 @@ public class HeapSort {
         if (right < heap_size && arr[biggest] < arr[right])
             biggest = right;
         if (biggest != node)
-            heap_swap(arr, biggest, node);
+            Swap(arr, biggest, node);
     }
 
-    public static void  heap_swap(int[] arr, int a, int b){
+    private static void Swap(int[] arr, int a, int b){
         int tmp = arr[a];
         arr[a] = arr[b];
         arr[b] = tmp;

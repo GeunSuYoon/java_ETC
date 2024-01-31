@@ -14,7 +14,8 @@ public class HashTable {
     static String[][]   Data = new String[HASH_SIZE][HASH_LEN];
     static int          n;
     static String       str;
-    public static void  hashing() {
+    public static void MakeTable()
+    {
         BufferedReader  br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder   sb = new StringBuilder();
 
@@ -30,8 +31,8 @@ public class HashTable {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            int key = getHashKey(str);
-            int check = isExist(key);
+            int key = GetHashKey(str);
+            int check = IsExist(key);
 
             if (check > 0)
                 sb.append(str).append(check).append("\n");
@@ -39,9 +40,8 @@ public class HashTable {
                 sb.append("OK").append("\n");
         }
         System.out.println(sb.toString());
-        return ;
     }
-    public static int   getHashKey(String str)
+    private static int GetHashKey(String str)
     {
         int key = 0;
         for (int str_cnt = 0; str_cnt < str.length(); str_cnt++)
@@ -49,13 +49,16 @@ public class HashTable {
         key = key < 0 ? -key : key;
         return (key % HASH_SIZE);
     }
-    public static int isExist(int key)
+    private static int IsExist(int key)
     {
         int len = TableLen[key];
 
-        if (len != 0) {
-            for (int cnt = 0; cnt < len; cnt++) {
-                if (str.equals(Data[key][cnt])) {
+        if (len != 0)
+        {
+            for (int cnt = 0; cnt < len; cnt++)
+            {
+                if (str.equals(Data[key][cnt]))
+                {
                     HashTable[key][cnt]++;
                     return (HashTable[key][cnt]);
                 }

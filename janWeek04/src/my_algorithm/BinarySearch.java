@@ -1,14 +1,14 @@
 package my_algorithm;
 
-import java.util.NoSuchElementException;
-
 public class BinarySearch {
-    public static int bs (int[] arr, int target) {
+    public static int Search(int[] arr, int target)
+    {
         int left = 0;
         int right = arr.length - 1;
         int mid = (left + right) / 2;
 
-        while (left <= right) {
+        while (left <= right)
+        {
             if (arr[mid] == target)
                 return (mid);
             else if (arr[mid] < target)

@@ -36,8 +36,8 @@ public class Main {
         System.out.println("==Binary Search==");
         printArr(bsArr);
         for (int i = 0; i < ele_max; i++) {
-            if (BS.bs(arr, i) >= 0)
-                System.out.printf("Target [%d] at [%d]\n", i, BS.bs(arr, i));
+            if (BS.Search(arr, i) >= 0)
+                System.out.printf("Target [%d] at [%d]\n", i, BS.Search(arr, i));
         }
         System.out.printf("\n");
     }
@@ -45,7 +45,7 @@ public class Main {
         int[]   hsArr = arr.clone();
         System.out.println("==Heap Sort==");
         printArr(hsArr);
-        HS.maxHeapSort(hsArr);
+        HS.Sort(hsArr);
         printArr(hsArr);
         System.out.printf("\n");
     }
@@ -53,14 +53,14 @@ public class Main {
         int[]   lsArr = arr.clone();
         System.out.println("==Longest Increasing Sequence==");
         printArr(lsArr);
-        System.out.printf("LIS [%d]", lIS.longestIncreasingSequence(arr));
+        System.out.printf("LIS [%d]", lIS.FindSequence(arr));
         System.out.printf("\n");
     }
     public static void ms_runner(int[] arr, MergeSort MS){
         int[]   msArr = arr.clone();
         System.out.println("==Merge Sort==");
         printArr(msArr);
-        MS.mergeSort(msArr, 0, msArr.length - 1);
+        MS.Sort(msArr, 0, msArr.length - 1);
         printArr(msArr);
         System.out.printf("\n");
     }
@@ -68,7 +68,7 @@ public class Main {
         int[]   qsArr = arr.clone();
         System.out.println("==Quick Sort==");
         printArr(qsArr);
-        QS.quickSort(qsArr);
+        QS.Sort(qsArr);
         printArr(qsArr);
         System.out.printf("\n");
     }
@@ -76,7 +76,7 @@ public class Main {
         int[]   isArr = arr.clone();
         System.out.println("==Insertion Sort==");
         printArr(isArr);
-        IS.insertionSort(isArr);
+        IS.Sort(isArr);
         printArr(isArr);
         System.out.printf("\n");
     }
@@ -84,7 +84,7 @@ public class Main {
         int[]   bsArr = arr.clone();
         System.out.println("==Bubble Sort==");
         printArr(bsArr);
-        BuS.bubbleSort(bsArr);
+        BuS.Sort(bsArr);
         printArr(bsArr);
         System.out.printf("\n");
     }
@@ -93,7 +93,7 @@ public class Main {
         int[]   csArr = arr.clone();
         System.out.println("==Counting Sort==");
         printArr(csArr);
-        CS.countingSort(csArr);
+        CS.Sort(csArr);
         printArr(csArr);
         System.out.printf("\n");
     }
@@ -101,7 +101,7 @@ public class Main {
         int[] rsArr = {170, 45, 75, 90, 802, 24, 2, 66};
         System.out.println("==Radix Sort==");
         printArr(rsArr);
-        RS.radixSort(rsArr);
+        RS.Sort(rsArr);
         printArr(rsArr);
         System.out.printf("\n");
     }
