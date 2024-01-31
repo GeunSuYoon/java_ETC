@@ -1,4 +1,4 @@
-package my_algorithm;
+package my_datastructure;
 
 import java.io.BufferedReader;
 import java.io.IOException;

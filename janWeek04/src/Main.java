@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 import my_algorithm.*;
+import my_datastructure.HashTable;
 
 public class Main {
     public static int   arr_len = 9;
@@ -18,8 +19,9 @@ public class Main {
         BubbleSort      BuS = new BubbleSort();
         CountingSort    CS = new CountingSort();
         RadixSort       RS = new RadixSort();
+        Djikstra        DK = new Djikstra();
+        int[]           arr = new int[arr_len];
 
-        int[] arr = new int[arr_len];
         makeArray(arr);
 //        lis_runner(arr, lIS);
 //        hs_runner(arr, HS);
@@ -28,7 +30,8 @@ public class Main {
 //        is_runner(arr, IS);
 //        bus_runner(arr, BuS);
 //        cs_runner(arr, CS);
-        rs_runner(arr, RS);
+//        rs_runner(arr, RS);
+        DK.FindPath();
     }
     public static void  bs_runner(int[] arr, BinarySearch BS) {
         int[] bsArr = arr.clone();
