@@ -20,6 +20,7 @@ public class Main {
         CountingSort    CS = new CountingSort();
         RadixSort       RS = new RadixSort();
         Djikstra        DK = new Djikstra();
+        BitMask         BM = new BitMask();
         int[]           arr = new int[arr_len];
 
         makeArray(arr);
@@ -31,7 +32,8 @@ public class Main {
 //        bus_runner(arr, BuS);
 //        cs_runner(arr, CS);
 //        rs_runner(arr, RS);
-        DK.FindPath();
+//        DK.FindPath();
+        BM.CalculBit();
     }
     public static void  bs_runner(int[] arr, BinarySearch BS) {
         int[] bsArr = arr.clone();
