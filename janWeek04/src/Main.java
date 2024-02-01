@@ -22,6 +22,7 @@ public class Main {
         Djikstra        DK = new Djikstra();
         BitMask         BM = new BitMask();
         PermuComb       PC = new PermuComb();
+        GCDnLCM         GL = new GCDnLCM();
         int[]           arr = new int[arr_len];
 
         makeArray(arr);
@@ -35,9 +36,10 @@ public class Main {
 //        rs_runner(arr, RS);
 //        DK.FindPath();
 //        BM.CalculBit();
-        printArr(arr);
-//        System.out.printf("Permutation 9P3 : [%d]", PC.Permutation(arr,  9, 3));
-        System.out.printf("Combination 9C3 : [%d]", PC.Combination(arr,  9, 3));
+//        printArr(arr);
+////        System.out.printf("Permutation 9P3 : [%d]", PC.Permutation(arr,  9, 3));
+//        System.out.printf("Combination 9C3 : [%d]", PC.Combination(arr,  9, 3));
+        System.out.printf("[%d, %d] GCD : [%d], LCM : [%d]", 72, 30, GL.GCD(72, 30), GL.LCM(72, 30));
     }
     public static void  bs_runner(int[] arr, BinarySearch BS) {
         int[] bsArr = arr.clone();
