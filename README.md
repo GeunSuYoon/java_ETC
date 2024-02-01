@@ -16,6 +16,8 @@
 - Merge Sort
 - Quick Sort
 - Radix Sort
+- Bit Mask
+  - bit calculation(and, or, xor, not) with bit_len = 10
 
 ## 자료구조 목록
 - Hash Table
