@@ -20,6 +20,8 @@
   - bit calculation(and, or, xor, not) with bit_len = 10
 - Permutation and Combination
   - MAX_LEN = 10. Can change MAX_LEN in class PermuComb.
+- GCD and LCM
+  - Solve with Euclidean Algorithm
 
 ## 자료구조 목록
 - Hash Table
