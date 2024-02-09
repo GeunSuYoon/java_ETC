@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "be54d4924fb9dae6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sieve of Eratosthenes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2741b59300f04db5",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LRU_Cache.md",
+                "file": "Sieve of Eratosthenes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LRU_Cache.md",
+                "file": "Sieve of Eratosthenes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LRU_Cache.md"
+                "file": "Sieve of Eratosthenes.md"
               }
             }
           }
@@ -159,9 +172,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa4cbf363e435745",
+  "active": "be54d4924fb9dae6",
   "lastOpenFiles": [
-    "TwoPtrAlgorithm.md",
-    "LRU_Cache.md"
+    "LRU_Cache.md",
+    "Sieve of Eratosthenes.md",
+    "Untitled",
+    "TwoPtrAlgorithm.md"
   ]
 }
