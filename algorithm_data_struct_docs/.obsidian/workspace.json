@@ -11,8 +11,12 @@
             "id": "02281db5f3af0cb1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CS_docs/OS/Introduction of OS.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CS_docs/OS/Introduction of OS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CS_docs/OS/Introduction of OS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CS_docs/OS/Introduction of OS.md"
+              }
             }
           }
         ]
@@ -140,6 +148,11 @@
   },
   "active": "8002e64dcb6f2fb1",
   "lastOpenFiles": [
+    "CS_docs/OS/sources",
+    "CS_docs/OS/sources/Pasted image 20240211203358.png",
+    "CS_docs/OS/Pasted image 20240211200535.png",
+    "CS_docs/OS/Introduction of OS.md",
+    "CS_docs/OS",
     "CS_docs"
   ]
 }
