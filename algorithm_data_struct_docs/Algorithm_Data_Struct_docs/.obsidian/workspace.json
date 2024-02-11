@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "f7bade9c74226fd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b6212a441de9720",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc29b084694392ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TwoPtrAlgorithm.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fa4cbf363e435745",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LRU_Cache.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "be54d4924fb9dae6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sieve of Eratosthenes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1c466cce1004b595",
+    "type": "split",
+    "children": [
+      {
+        "id": "eed3fb004ebd66bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c36e78e4207a8aa7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f4139b55242632bd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9f64f646cc79ba5e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2741b59300f04db5",
+    "type": "split",
+    "children": [
+      {
+        "id": "b42f101c1ac3b67c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe899e1488860e66",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Sieve of Eratosthenes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fbd2c1070f5a5eec",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sieve of Eratosthenes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f1b982423cbe0a4b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ca5109ae1b9ac266",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Sieve of Eratosthenes.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c36e78e4207a8aa7",
+  "lastOpenFiles": [
+    "LRU_Cache.md",
+    "Sieve of Eratosthenes.md",
+    "Untitled",
+    "TwoPtrAlgorithm.md"
+  ]
+}

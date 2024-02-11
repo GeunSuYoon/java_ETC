@@ -1,64 +1,35 @@
 {
   "main": {
-    "id": "f7bade9c74226fd2",
+    "id": "711beae81ed1f7d2",
     "type": "split",
     "children": [
       {
-        "id": "4b6212a441de9720",
+        "id": "0ad606f72bf4fce1",
         "type": "tabs",
         "children": [
           {
-            "id": "bc29b084694392ea",
+            "id": "02281db5f3af0cb1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TwoPtrAlgorithm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fa4cbf363e435745",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LRU_Cache.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "be54d4924fb9dae6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sieve of Eratosthenes.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "1c466cce1004b595",
+    "id": "408d29c00484c249",
     "type": "split",
     "children": [
       {
-        "id": "eed3fb004ebd66bb",
+        "id": "b1f7475e99a72eb9",
         "type": "tabs",
         "children": [
           {
-            "id": "c36e78e4207a8aa7",
+            "id": "8002e64dcb6f2fb1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -68,7 +39,7 @@
             }
           },
           {
-            "id": "f4139b55242632bd",
+            "id": "4fe78906a08d65da",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -83,7 +54,7 @@
             }
           },
           {
-            "id": "9f64f646cc79ba5e",
+            "id": "c2c017b7b2dad662",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -94,24 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "2741b59300f04db5",
+    "id": "b9313d0da65ba6d9",
     "type": "split",
     "children": [
       {
-        "id": "b42f101c1ac3b67c",
+        "id": "c5375fdeef5dcd8e",
         "type": "tabs",
         "children": [
           {
-            "id": "fe899e1488860e66",
+            "id": "19ae57084a6ae6ac",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sieve of Eratosthenes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,19 +92,18 @@
             }
           },
           {
-            "id": "fbd2c1070f5a5eec",
+            "id": "76bcd0e6c43c949d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sieve of Eratosthenes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "f1b982423cbe0a4b",
+            "id": "bde17ef1f5483900",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -146,13 +114,11 @@
             }
           },
           {
-            "id": "ca5109ae1b9ac266",
+            "id": "e996f0cf8979c466",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sieve of Eratosthenes.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -172,11 +138,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "be54d4924fb9dae6",
+  "active": "8002e64dcb6f2fb1",
   "lastOpenFiles": [
-    "LRU_Cache.md",
-    "Sieve of Eratosthenes.md",
-    "Untitled",
-    "TwoPtrAlgorithm.md"
+    "CS_docs"
   ]
 }
