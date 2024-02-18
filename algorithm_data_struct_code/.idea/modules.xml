@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/janWeek04.iml" filepath="$PROJECT_DIR$/janWeek04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sparta_coding_club/sparta_coding_club.iml" filepath="$PROJECT_DIR$/sparta_coding_club/sparta_coding_club.iml" />
     </modules>
   </component>
 </project>
